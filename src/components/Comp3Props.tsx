@@ -1,3 +1,7 @@
-function Comp3Props({ name }: { name: string }) {
-  return <h1>Hello {name}</h1>;
+export default function Comp3Props({ name }: { name: string }) {
+  return (
+    <div style={{padding: 3, marginTop: 3, background: 'yellow'}}>
+      <h3>Hello {name}</h3>
+    </div>
+  );
 }

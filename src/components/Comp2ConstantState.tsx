@@ -1,7 +1,11 @@
 import { useState } from "react";
 
-function Comp2ConstantState() {
-  const [name, seName] = useState("");
+export default function Comp2ConstantState() {
+  const [name] = useState("Ali");
 
-  return <h2>{name}</h2>;
+  return (
+    <div style={{padding: 3, marginTop: 4, background: 'lightgrey'}}>
+      <h2>{name}</h2>
+    </div>
+  );
 }
