@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 // CLICK INTERACTION
-function Comp4InteractState() {
-  const [name, seName] = useState("");
+export default function Comp4InteractState() {
+  const [name, seName] = useState("Name");
 
   return (
     <>
       <h2>{name}</h2>
-      <button onClick={() => seName("hi")}>
+      <button onClick={() => seName("Karim")}>
         Change Value
       </button>
     </>
